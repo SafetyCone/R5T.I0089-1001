@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Threading.Tasks;
 
 using Microsoft.AspNetCore.Builder;
@@ -9,12 +9,12 @@ using Microsoft.Extensions.DependencyInjection;
 
 using R5T.D0089;
 using R5T.D1001;
-using R5T.D1001.A001;
+using R5T.D1001.A001;using R5T.T0064;
 
 
 namespace R5T.I0089_1001
-{
-    public abstract class WebHostStartupBase : IWebHostStartup
+{[ServiceImplementationMarker]
+    public abstract class WebHostStartupBase : IWebHostStartup,IServiceImplementation
     {
         protected IServiceY ServiceY { get; }
 
